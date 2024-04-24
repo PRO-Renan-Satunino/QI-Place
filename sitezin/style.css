@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #6a0dad; /* roxo */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.produto {
+    float: left;
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px;
+    background-color: #ffe4e1; /* salmão */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #008000; /* verde */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adicionei estilos para a seção de destaques e o slider */
+.destaques {
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.destaque-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.destaque-slide {
+    flex: 0 0 100%;
+}
+
+.destaque-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo adicional para botões do slider */
+.comprar-btn {
+    background-color: #6a0dad; /* roxo */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comprar-btn:hover {
+    background-color: #4b077d; /* tom mais escuro de roxo */
+}
