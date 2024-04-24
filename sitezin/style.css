@@ -47,10 +47,12 @@ footer {
 /* Adicionei estilos para a seção de destaques e o slider */
 .destaques {
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto; /* Isso centraliza horizontalmente o contêiner */
     overflow: hidden;
     position: relative;
+    text-align: center; /* Isso centraliza o conteúdo dentro do contêiner */
 }
+
 
 .destaque-slider {
     display: flex;
@@ -79,4 +81,25 @@ footer {
 
 .comprar-btn:hover {
     background-color: #4b077d; /* tom mais escuro de roxo */
+}
+
+/* Estilos para os produtos */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto {
+    width: 23%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
 }
