@@ -8,8 +8,24 @@ body {
 header {
     background-color: #6a0dad; /* roxo */
     color: #fff;
-    padding: 20px;
+    padding: 2px;
     text-align: center;
+    max-height: 80px
+    ;
+}
+
+header p, h1 {
+    margin-right: 70%;
+}
+
+header p {
+    font-size: 65%;
+    margin-top: 0;
+}
+header h1{
+    font-size: 200%;
+    margin-bottom: 3px;
+    margin-top: 8px;
 }
 
 .container {
@@ -46,13 +62,12 @@ footer {
 
 /* Adicionei estilos para a seção de destaques e o slider */
 .destaques {
-    width: 75%;
+    width: 100%; /* Largura total da tela */
     margin: 0 auto; /* Isso centraliza horizontalmente o contêiner */
     overflow: hidden;
     position: relative;
     text-align: center; /* Isso centraliza o conteúdo dentro do contêiner */
 }
-
 
 .destaque-slider {
     display: flex;
@@ -64,9 +79,12 @@ footer {
 }
 
 .destaque-slide img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 620px; /* Definindo a altura máxima desejada */
+    object-fit: contain; /* Para garantir que a imagem seja mostrada inteira */
 }
+
+
 
 /* Estilo adicional para botões do slider */
 .comprar-btn {
