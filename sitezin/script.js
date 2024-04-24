@@ -3,7 +3,7 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    let i;
+    let i;s
     const slides = document.getElementsByClassName("destaque-slide");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
